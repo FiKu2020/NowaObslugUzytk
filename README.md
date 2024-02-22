@@ -6,3 +6,14 @@ Todo List:
 *POST /users : tworzący użytkownika; - zrobione
 *PATCH /users/<id> : zmieniający dane użytkownika
 *DELETE /users/<id> : usuwający użytkownika;
+
+Testy
+``` 
+Unit
+    *GET /users : zwracający listę zarejestrowanych użytkowników;
+    *GET /users/<id> : zwracający wskazanego użytkownika - częściowo implementowany na zajęciach.
+    *POST /users : tworzący użytkownika;
+    *PATCH /users/<id> : zmieniający dane użytkownika
+    *DELETE /users/<id> : usuwający użytkownika;
+
+```
