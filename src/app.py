@@ -1,5 +1,5 @@
 from flask import Flask,jsonify,request
-
+from controlers import UserControlers
 app = Flask(__name__)
 @app.route('/users',methods=['GET'])
 def temp():
@@ -14,5 +14,5 @@ def temp():
 def temp():
     pass
 @app.route('/users/<int:user_id>', methods=['DELETE'])
-def temp():
-    pass
+def delete_user(id):
+    return 

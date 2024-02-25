@@ -1,6 +1,6 @@
 from flask import Flask,jsonify
 from flask import request
-
+from services import User
 
 class UserControlers:
     temp_user_storage = []
@@ -19,17 +19,19 @@ class UserControlers:
     def create_an_user(self):
         new_temp_user = {
             "id": len(UserControlers.temp_user_storage) + 1,
-            "firstName": str,
-            "lastName": str,
+            "first_Name": str,
+            "last_Name": str,
             "age" : int,
             "group": str
         }
         UserControlers.temp_user_storage.append(new_temp_user)
         return jsonify(new_temp_user), 201
 
-    def delete_user(id):
+    def delete_user(self, id):
         if id in UserControlers.temp_user_storage:
-            UserControlers.temp_user_storage.remove(user)
-            return jsonify(user)
+            UserControlers.temp_user_storage.remove(User)
+            return jsonify(User)
         else:
             return jsonify({f"Following id : {id} not found"}), 404
+    def update_user(self):
+        pass
