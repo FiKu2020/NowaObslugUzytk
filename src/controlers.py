@@ -34,4 +34,4 @@ class UserControlers:
         else:
             return jsonify({f"Following id : {id} not found"}), 404
     def update_user(self):
-        pass
+        User
