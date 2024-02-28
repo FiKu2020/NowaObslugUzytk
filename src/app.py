@@ -1,5 +1,5 @@
 from flask import Flask,jsonify,request
-from controlers import UserControlers
+from src.repositories import UserControlers
 app = Flask(__name__)
 @app.route('/users',methods=['GET'])
 def get_all_users():

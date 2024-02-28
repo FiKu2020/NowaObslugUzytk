@@ -1,6 +1,6 @@
 from flask import Flask,jsonify
 from flask import request
-from services import User
+from src.user import User
 
 class UserControlers:
     temp_user_storage = []
